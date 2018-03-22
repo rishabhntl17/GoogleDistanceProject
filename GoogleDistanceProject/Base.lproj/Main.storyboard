@@ -55,6 +55,10 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNs-Ms-2LX">
+                                <rect key="frame" x="71" y="183" width="9" height="321"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsi-GM-QCJ">
                                 <rect key="frame" x="64.5" y="161" width="22.5" height="22.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,10 +69,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaR-nH-HkT">
                                 <rect key="frame" x="64" y="504.5" width="22.5" height="22.5"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNs-Ms-2LX">
-                                <rect key="frame" x="71" y="183.5" width="9" height="321"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ORIGIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwE-af-21A">
                                 <rect key="frame" x="75" y="105" width="225" height="30"/>
@@ -86,30 +86,30 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-zp-xvX">
                                 <rect key="frame" x="107" y="172" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jB-kM-7wM">
                                 <rect key="frame" x="106.5" y="515.5" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH8-oH-Cb7">
                                 <rect key="frame" x="106.5" y="309.5" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmc-ux-qxQ">
                                 <rect key="frame" x="106.5" y="378" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-P4-wJ0">
-                                <rect key="frame" x="302" y="551" width="31" height="32"/>
+                                <rect key="frame" x="305" y="551" width="31" height="32"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                 <state key="normal" title="GO!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,7 +126,7 @@
                             <constraint firstItem="HNs-Ms-2LX" firstAttribute="centerX" secondItem="gsi-GM-QCJ" secondAttribute="centerX" id="22F-mf-Lnl"/>
                             <constraint firstItem="KaR-nH-HkT" firstAttribute="width" secondItem="gsi-GM-QCJ" secondAttribute="width" id="5Ci-Ho-V7c"/>
                             <constraint firstItem="Ncf-P4-wJ0" firstAttribute="centerY" secondItem="9BY-Xb-m3L" secondAttribute="centerY" id="5MO-JK-fUH"/>
-                            <constraint firstItem="Ncf-P4-wJ0" firstAttribute="leading" secondItem="9BY-Xb-m3L" secondAttribute="trailing" constant="2" id="6qg-y2-C1H"/>
+                            <constraint firstItem="Ncf-P4-wJ0" firstAttribute="leading" secondItem="9BY-Xb-m3L" secondAttribute="trailing" constant="5" id="6qg-y2-C1H"/>
                             <constraint firstItem="9BY-Xb-m3L" firstAttribute="width" secondItem="nwE-af-21A" secondAttribute="width" id="9Mt-Gh-E7a"/>
                             <constraint firstItem="Fdn-lI-sRd" firstAttribute="top" secondItem="VZb-eb-tpQ" secondAttribute="top" id="Diy-ya-zNt"/>
                             <constraint firstItem="KaR-nH-HkT" firstAttribute="top" secondItem="HNs-Ms-2LX" secondAttribute="bottom" id="EMt-fE-6PW"/>
