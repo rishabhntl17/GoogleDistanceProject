@@ -29,7 +29,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WANT TO BE THERE ON TIME ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdn-lI-sRd">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WANT TO BE THERE ON TIME ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdn-lI-sRd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="0Sc-EU-LRR"/>
@@ -38,7 +38,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We got the details right here !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ynA-Lh-YbM">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We got the details right here !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ynA-Lh-YbM">
                                             <rect key="frame" x="0.0" y="40" width="375" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -77,6 +77,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-P4-wJ0">
+                                <rect key="frame" x="305" y="551" width="31" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="GO!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUZ-3v-qvI"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DESTINATION" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9BY-Xb-m3L">
                                 <rect key="frame" x="75" y="552" width="225" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
@@ -108,16 +118,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-P4-wJ0">
-                                <rect key="frame" x="305" y="551" width="31" height="32"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
-                                <state key="normal" title="GO!">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUZ-3v-qvI"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -165,6 +165,9 @@
                         <outlet property="destinationTextField" destination="9BY-Xb-m3L" id="fEj-sZ-hPh"/>
                         <outlet property="destinationView" destination="KaR-nH-HkT" id="M1G-Yr-rhF"/>
                         <outlet property="distanceLabel" destination="aH8-oH-Cb7" id="DiF-gt-0BE"/>
+                        <outlet property="goButtonOutlet" destination="Ncf-P4-wJ0" id="5JU-5Z-DsT"/>
+                        <outlet property="headerDetailLabel" destination="ynA-Lh-YbM" id="eYr-Wo-o3i"/>
+                        <outlet property="headerLabel" destination="Fdn-lI-sRd" id="Zx0-tu-URG"/>
                         <outlet property="originLabel" destination="Nym-zp-xvX" id="TF3-tP-EO3"/>
                         <outlet property="originTextField" destination="nwE-af-21A" id="fg2-ke-QAO"/>
                         <outlet property="originView" destination="gsi-GM-QCJ" id="D5F-lW-Lei"/>
